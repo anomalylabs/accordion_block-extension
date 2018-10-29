@@ -1,0 +1,25 @@
+<div class="panel-group" id="accordion--{{ block.id }}">
+
+    {% for section in block.sections %}
+        <div class="panel panel-default ">
+
+            <div class="panel-heading accordion-toggle section-toggle collapsed" data-toggle="collapse"
+                 data-parent="#accordion--{{ block.id }}" data-target="#accordion__section--{{ section.id }}">
+
+                <h4 class="panel-title">
+                    <a href="#">{{ section.title }}</a>
+                </h4>
+
+            </div>
+
+            <div id="accordion__section--{{ section.id }}" class="panel-collapse collapse" style="height: 0;">
+
+                <div class="panel-body">
+                    {{ section.content.render|raw }}
+                </div>
+
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
