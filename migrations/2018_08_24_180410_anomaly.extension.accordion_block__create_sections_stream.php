@@ -29,6 +29,7 @@ class AnomalyExtensionAccordionBlockCreateSectionsStream extends Migration
      */
     protected $assignments = [
         'title' => [
+            'required'     => true,
             'translatable' => true,
         ],
         'content',
