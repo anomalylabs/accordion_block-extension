@@ -12,6 +12,13 @@ use Anomaly\AccordionBlockExtension\Block\BlockModel;
  */
 class AccordionBlockExtension extends BlockExtension
 {
+    
+    /**
+     * The block category.
+     *
+     * @var string
+     */
+    protected $category = 'layout';
 
     /**
      * This extension provides a FAQs
